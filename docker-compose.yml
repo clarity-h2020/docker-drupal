@@ -1,0 +1,69 @@
+# Drupal with PostgreSQL
+#
+# Access via "http://localhost:8080"
+#   (or "http://$(docker-machine ip):8080" if using docker-machine)
+#
+# During initial Drupal setup,
+# Database type: PostgreSQL
+# Database name: postgres
+# Database username: postgres
+# Database password: example
+# ADVANCED OPTIONS; Database host: postgres
+
+version: '3.6' 
+
+services:
+
+  drupal:
+    build:
+      context: ./drupal
+    container_name: csis.clarity-h2020.eu
+    environment:
+        VIRTUAL_HOST: ${VIRTUAL_HOST}
+        LETSENCRYPT_HOST: ${LETSENCRYPT_HOST}
+        LETSENCRYPT_EMAIL: ${LETSENCRYPT_EMAIL}
+    links: 
+      - drupal-db:postgres
+    ports:
+        - 8080:80
+    volumes:
+      - type: bind
+        source: ./drupal-data
+        target: /app   
+      - type: bind
+        source: /home/pascal
+        target: /home/pascal
+      - type: bind
+        source: ./git/modules/drupal-data
+        target: ./git/modules/drupal-data
+      - type: tmpfs
+        target: /tmp  
+    restart: "always"
+    depends_on:
+        - drupal-db
+
+  drupal-db:
+    container_name: drupal-db
+    image: mdillon/postgis:10
+    environment:
+        # THIS IS MADNESS: envs need to be ordered POSTGRES_DB > POSTGRES_USER > POSTGRES_PASSWORD.
+        # https://github.com/docker-library/postgres/issues/41#issuecomment-382925263
+        POSTGRES_DB: ${POSTGRES_DB}
+        POSTGRES_USER: ${POSTGRES_USER}
+        POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+        PGDATA: /var/lib/postgresql/data/pgdata
+    ports:
+        - "0.0.0.0:${POSTGRES_PORT:-5432}:5432"
+    volumes:
+      - type: bind
+        source: ./postgresql_data
+        target: /var/lib/postgresql/data/pgdata
+      - type: tmpfs
+        target: /tmp
+    restart: "always"
+  
+networks:
+  default:
+    external:
+      name: ${NETWORK:-webproxy}
+      
