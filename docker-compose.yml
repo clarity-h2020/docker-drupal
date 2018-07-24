@@ -35,6 +35,8 @@ services:
         target: /home/pascal
       - type: tmpfs
         target: /tmp  
+        tmpfs:
+            mode: 1777
     restart: "always"
     depends_on:
         - drupal-db
