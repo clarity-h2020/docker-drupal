@@ -1,0 +1,23 @@
+saw_wizard.saw_wizard:
+  title: Manage Wizard
+  route_name: saw_wizard.tab
+  base_route: entity.node_type.edit_form
+  weight: 20
+
+#saw_wizard.saw_wizard_vocabulary:
+#  title: Manage Wizard
+#  route_name: saw_wizard.tab_vocabulary
+#  base_route: entity.taxonomy_vocabulary.overview_form
+#  weight: 20
+  
+saw_wizard.saw_wizard_group:
+  title: Manage Wizard
+  route_name: saw_wizard.tab_group
+  base_route: entity.group_type.edit_form
+  weight: 20
+  
+saw_wizard.saw_wizard_media:
+  title: Manage Wizard
+  route_name: saw_wizard.tab_media
+  base_route: entity.media_type.edit_form
+  weight: 20

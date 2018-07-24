@@ -33,11 +33,10 @@ services:
       - type: bind
         source: /home/pascal
         target: /home/pascal
-      - type: bind
-        source: ./git/modules/drupal-data
-        target: ./git/modules/drupal-data
       - type: tmpfs
         target: /tmp  
+        tmpfs:
+            mode: 1777
     restart: "always"
     depends_on:
         - drupal-db

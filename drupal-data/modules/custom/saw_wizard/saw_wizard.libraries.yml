@@ -1,0 +1,8 @@
+wizard-menu:
+  css:
+    theme:
+      css/wizard.css: {}
+  js:
+    js/wizard.js: {}
+  dependencies:
+    - core/jquery
