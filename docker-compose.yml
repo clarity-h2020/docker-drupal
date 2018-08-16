@@ -17,7 +17,7 @@ services:
   drupal:
     build:
       context: ./drupal
-    container_name: csis.clarity-h2020.eu
+    container_name: ${COMPOSE_PROJECT_NAME}-drupal
     environment:
         VIRTUAL_HOST: ${VIRTUAL_HOST}
         LETSENCRYPT_HOST: ${LETSENCRYPT_HOST}
@@ -41,7 +41,7 @@ services:
         - drupal-db
 
   drupal-db:
-    container_name: drupal-db
+    container_name: ${COMPOSE_PROJECT_NAME}-postgis
     image: mdillon/postgis:10
     environment:
         # THIS IS MADNESS: envs need to be ordered POSTGRES_DB > POSTGRES_USER > POSTGRES_PASSWORD.
@@ -50,8 +50,8 @@ services:
         POSTGRES_USER: ${POSTGRES_USER}
         POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
         PGDATA: /var/lib/postgresql/data/pgdata
-    ports:
-        - "0.0.0.0:${POSTGRES_PORT:-5432}:5432"
+    #ports:
+    #    - "0.0.0.0:${POSTGRES_PORT:-54320}:5432"
     volumes:
       - type: bind
         source: ./postgresql_data
@@ -63,5 +63,5 @@ services:
 networks:
   default:
     external:
-      name: ${NETWORK:-webproxy}
+      name: ${NETWORK:-clarity}
       
