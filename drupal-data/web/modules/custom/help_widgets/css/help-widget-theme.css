@@ -1,0 +1,28 @@
+.field--widget-textfield-widget a.contextual-help {
+	position: relative;
+    display: inline-block;
+    margin: 0 0 0 10px;
+    width: 24px;
+    height: 24px;
+    top: 7px;
+    background-image: url(../images/icons/help-24x24.ico);
+}
+
+.field--widget-textarea-widget a.contextual-help {
+	position: relative;
+    float: right;
+    margin: 0 10px 0 0;
+    width: 24px;
+    height: 24px;
+    top: 7px;
+    background-image: url(../images/icons/help-24x24.ico);
+}
+
+.field--widget-textarea-widget span.field-suffix {
+	display: block;
+	margin-bottom: 30px;
+}
+
+.field--widget-textfield-widget a.contextual-help.example-icon, .field--widget-textarea-widget a.contextual-help.example-icon {
+	background-image: url(../images/icons/info-24x24.ico);
+}
