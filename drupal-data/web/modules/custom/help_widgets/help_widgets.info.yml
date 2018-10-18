@@ -1,5 +1,0 @@
-name: 'help_widgets'
-type: module
-description: 'Module for displaying contextual help texts and examples'
-core: 8.x
-package: 'Custom'

@@ -1,6 +1,0 @@
-base:
-  css:
-    theme:
-      css/csis.css: {}
-  js:
-    js/csis.js: {}

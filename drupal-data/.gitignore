@@ -3,9 +3,12 @@
 /vendor/
 /web/core/
 /web/modules/contrib/
+/web/modules/custom/
 /web/themes/contrib/
+/web/themes/custom/
 /web/profiles/contrib/
 /web/libraries/
+/web/apps/
 
 # Ignore sensitive information
 /web/sites/*/settings.php
