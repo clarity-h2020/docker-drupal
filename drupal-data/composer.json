@@ -50,6 +50,7 @@
         "drupal/smtp": "^1.0@beta",
         "drupal/twig_tweak": "^2.1",
         "drupal/view_mode_page": "^3.1",
+        "drupal/viewfield": "^3.0@alpha",
         "drush/drush": "^9.0.0",
         "saw/saw_wizard": "0.9.0-dev",
         "vlucas/phpdotenv": "^2.4",

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "63ac8036d6da81959b2c6bfd1c67dadd",
+    "content-hash": "79c66d3ff567ca7bba4153f539e873a7",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -3986,6 +3986,58 @@
             "homepage": "https://www.drupal.org/project/view_mode_page",
             "support": {
                 "source": "http://cgit.drupalcode.org/view_mode_page"
+            }
+        },
+        {
+            "name": "drupal/viewfield",
+            "version": "3.0.0-alpha2",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/viewfield",
+                "reference": "8.x-3.0-alpha2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/viewfield-8.x-3.0-alpha2.zip",
+                "reference": "8.x-3.0-alpha2",
+                "shasum": "8740bc38b7001e614207b16bd6137a45bafa4d0c"
+            },
+            "require": {
+                "drupal/core": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-3.x": "3.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-3.0-alpha2",
+                    "datestamp": "1489747683",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Alpha releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "keithm",
+                    "homepage": "https://www.drupal.org/user/691250"
+                },
+                {
+                    "name": "sun",
+                    "homepage": "https://www.drupal.org/user/54136"
+                }
+            ],
+            "description": "Defines an entity reference field type to display a view.",
+            "homepage": "http://drupal.org/project/viewfield",
+            "support": {
+                "source": "http://cgit.drupalcode.org/viewfield",
+                "issues": "https://www.drupal.org/project/issues/viewfield"
             }
         },
         {
@@ -9471,6 +9523,7 @@
         "drupal/ng_lightbox": 10,
         "drupal/prepopulate": 15,
         "drupal/smtp": 10,
+        "drupal/viewfield": 15,
         "saw/saw_wizard": 20
     },
     "prefer-stable": true,
