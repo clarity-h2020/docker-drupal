@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c1c43e3f90ca66a908be63a0639fd772",
+    "content-hash": "c27d96e34ceebfc8d7d2d73c1d92797c",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -1793,6 +1793,71 @@
             }
         },
         {
+            "name": "drupal/bootstrap",
+            "version": "3.13.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/bootstrap",
+                "reference": "8.x-3.13"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/bootstrap-8.x-3.13.zip",
+                "reference": "8.x-3.13",
+                "shasum": "a75f0cd8e8b115282b419ca143d7810be1a4f5f3"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "type": "drupal-theme",
+            "extra": {
+                "branch-alias": {
+                    "dev-3.x": "3.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-3.13",
+                    "datestamp": "1536786480",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Mark Carver (markcarver)",
+                    "homepage": "https://www.drupal.org/u/markcarver",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "John McCormick (neardark)",
+                    "homepage": "https://www.drupal.org/u/neardark",
+                    "role": "Co-maintainer"
+                },
+                {
+                    "name": "Fabiano Sant'Ana (wundo)",
+                    "homepage": "https://www.drupal.org/u/wundo",
+                    "role": "Co-maintainer"
+                },
+                {
+                    "name": "wundo",
+                    "homepage": "https://www.drupal.org/user/25523"
+                }
+            ],
+            "description": "Built to use Bootstrap, a sleek, intuitive, and powerful front-end framework for faster and easier web development.",
+            "homepage": "https://www.drupal.org/project/bootstrap",
+            "support": {
+                "source": "http://cgit.drupalcode.org/bootstrap",
+                "docs": "https://drupal-bootstrap.org",
+                "issues": "https://www.drupal.org/project/issues/bootstrap",
+                "irc": "irc://irc.freenode.org/drupal-bootstrap"
+            }
+        },
+        {
             "name": "drupal/chosen",
             "version": "2.6.0",
             "source": {
@@ -2614,6 +2679,65 @@
             ],
             "description": "Drupal is an open source content management platform powering millions of websites and applications.",
             "time": "2018-10-17T22:19:47+00:00"
+        },
+        {
+            "name": "drupal/corporate_lite",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/corporate_lite",
+                "reference": "8.x-1.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/corporate_lite-8.x-1.0.zip",
+                "reference": "8.x-1.0",
+                "shasum": "8ef1b6d870dbcc941e9d3f0afacd5099a5b226cb"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "type": "drupal-theme",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0",
+                    "datestamp": "1529603320",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "evankay",
+                    "homepage": "https://www.drupal.org/user/2912669"
+                },
+                {
+                    "name": "skechagia",
+                    "homepage": "https://www.drupal.org/user/2447146"
+                },
+                {
+                    "name": "skounis",
+                    "homepage": "https://www.drupal.org/user/877552"
+                },
+                {
+                    "name": "vkech",
+                    "homepage": "https://www.drupal.org/user/1451830"
+                }
+            ],
+            "description": "The free version of <a target=\"_blank\" href=\"https://morethanthemes.com/themes/corporateplus?utm_source=corporate-lite-demo&amp;utm_medium=theme-settings&amp;utm_campaign=free-themes\">Corporate+ Drupal 8 theme</a>",
+            "homepage": "https://www.drupal.org/project/corporate_lite",
+            "support": {
+                "source": "http://cgit.drupalcode.org/corporate_lite"
+            }
         },
         {
             "name": "drupal/ctools",
@@ -4080,6 +4204,69 @@
             "homepage": "https://www.drupal.org/project/restui",
             "support": {
                 "source": "http://cgit.drupalcode.org/restui"
+            }
+        },
+        {
+            "name": "drupal/showcase_lite",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/showcase_lite",
+                "reference": "8.x-1.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/showcase_lite-8.x-1.1.zip",
+                "reference": "8.x-1.1",
+                "shasum": "cff70c03c39915fc08b711358d5aee0f937b7786"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "type": "drupal-theme",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.1",
+                    "datestamp": "1513574888",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "evankay",
+                    "homepage": "https://www.drupal.org/user/2912669"
+                },
+                {
+                    "name": "gtsopour",
+                    "homepage": "https://www.drupal.org/user/829430"
+                },
+                {
+                    "name": "skechagia",
+                    "homepage": "https://www.drupal.org/user/2447146"
+                },
+                {
+                    "name": "skounis",
+                    "homepage": "https://www.drupal.org/user/877552"
+                },
+                {
+                    "name": "vkech",
+                    "homepage": "https://www.drupal.org/user/1451830"
+                }
+            ],
+            "description": "A flexible, recolorable theme with many regions and a responsive, mobile-first layout.",
+            "homepage": "https://www.drupal.org/project/showcase_lite",
+            "support": {
+                "source": "http://cgit.drupalcode.org/showcase_lite"
             }
         },
         {
