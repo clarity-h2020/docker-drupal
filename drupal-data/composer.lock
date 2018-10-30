@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a87890c5684d98caf10669bbf937c67a",
+    "content-hash": "81326711ed8f6d5833202f3301e1efb7",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -3731,66 +3731,6 @@
             "homepage": "https://www.drupal.org/project/inline_entity_form",
             "support": {
                 "source": "http://cgit.drupalcode.org/inline_entity_form"
-            }
-        },
-        {
-            "name": "drupal/json_field",
-            "version": "1.0.0-rc1",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupal.org/project/json_field",
-                "reference": "8.x-1.0-rc1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/json_field-8.x-1.0-rc1.zip",
-                "reference": "8.x-1.0-rc1",
-                "shasum": "10a3441c40b7da0b5fe48275c812b6ac2b5cc91c"
-            },
-            "require": {
-                "drupal/core": "*"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
-                "drupal": {
-                    "version": "8.x-1.0-rc1",
-                    "datestamp": "1521463384",
-                    "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Project has not opted into security advisory coverage!"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "authors": [
-                {
-                    "name": "See contributors",
-                    "homepage": "https://www.drupal.org/node/2653746/committers",
-                    "role": "Developer"
-                },
-                {
-                    "name": "Jaesin",
-                    "homepage": "https://www.drupal.org/user/841054"
-                },
-                {
-                    "name": "dawehner",
-                    "homepage": "https://www.drupal.org/user/99340"
-                }
-            ],
-            "description": "Provides a JSON field, formatter and views integration",
-            "homepage": "https://www.drupal.org/project/json_field",
-            "keywords": [
-                "Drupal"
-            ],
-            "support": {
-                "source": "http://cgit.drupalcode.org/json_field",
-                "issues": "https://www.drupal.org/project/issues/json_field"
             }
         },
         {
@@ -10136,7 +10076,6 @@
         "drupal/geofield": 10,
         "drupal/group": 5,
         "drupal/inline_entity_form": 5,
-        "drupal/json_field": 5,
         "drupal/ng_lightbox": 10,
         "drupal/prepopulate": 15,
         "drupal/reactjs_mount": 15,
