@@ -44,6 +44,7 @@
         "drupal/group": "^1.0@RC",
         "drupal/imce": "^1.6",
         "drupal/inline_entity_form": "^1.0@RC",
+        "drupal/json_field": "^1.0@RC",
         "drupal/jsonapi": "^1.23",
         "drupal/module_filter": "^3.1",
         "drupal/ng_lightbox": "^1.0@beta",
