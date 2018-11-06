@@ -45,4 +45,5 @@ COPY apache-drupal.conf /etc/apache2/sites-enabled/000-default.conf
 # use user and group from host to avoid problems with files created and owned by root when using git on host
 RUN groupadd -g 999 docker
 RUN useradd --create-home --shell /bin/bash --uid 1002 --gid 999 pascal
+RUN useradd --create-home --shell /bin/bash --uid 999 --gid 999 docker
 WORKDIR /app
