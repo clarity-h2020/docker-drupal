@@ -34,6 +34,9 @@ services:
         source: /home/pascal
         target: /home/pascal
       - type: bind
+        source: /home/docker
+        target: /home/docker
+      - type: bind
         source: ./drupal-tmp  
         target: /tmp
     restart: "always"
