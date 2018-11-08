@@ -43,6 +43,7 @@
         "drupal/geofield": "^1.0@beta",
         "drupal/geofield_map": "^2.6",
         "drupal/group": "^1.0@RC",
+        "drupal/image_delta_formatter": "^1.0",
         "drupal/imce": "^1.6",
         "drupal/inline_entity_form": "^1.0@RC",
         "drupal/json_field": "^1.0@RC",
