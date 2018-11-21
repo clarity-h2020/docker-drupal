@@ -6,7 +6,7 @@
 /postgresql_data
 
 # managed in https://gitlab.atosresearch.eu/ari/clarity-csis-drupal
-/drupal_data
+/drupal-data
 
 # netbeans
 /nbproject/private/
