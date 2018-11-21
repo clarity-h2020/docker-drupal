@@ -1,7 +1,12 @@
 .env*
 !.env.sample
+
+# exclude volumes
 /drupal-tmp
 /postgresql_data
+
+# managed in https://gitlab.atosresearch.eu/ari/clarity-csis-drupal
+/drupal_data
 
 # netbeans
 /nbproject/private/
