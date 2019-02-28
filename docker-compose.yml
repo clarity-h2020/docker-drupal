@@ -53,8 +53,8 @@ services:
         POSTGRES_USER: ${POSTGRES_USER}
         POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
         PGDATA: /var/lib/postgresql/data/pgdata
-    #ports:
-    #    - "0.0.0.0:${POSTGRES_PORT:-54320}:5432"
+    ports:
+        - "0.0.0.0:${POSTGRES_PORT:-5434}:5432"
     volumes:
       - type: bind
         source: ./postgresql_data
