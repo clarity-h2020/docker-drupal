@@ -39,6 +39,9 @@ services:
       - type: bind
         source: ./drupal-tmp  
         target: /tmp
+      - type: bind
+        source: ./uploads.ini  
+        target: /usr/local/etc/php/conf.d/uploads.ini
     restart: "always"
     depends_on:
         - drupal-db

@@ -1,10 +1,12 @@
 # https://circleci.com/blog/continuous-drupal-p1-maintaining-with-docker-git-composer/
-FROM drupal:8.6-apache
+FROM drupal:8.7-apache
 
 
 ENV DEBIAN_FRONTEND=noninteractive LANG=en_US.UTF-8 LC_ALL=C.UTF-8 LANGUAGE=en_US.UTF-8
 ENV COMPOSER_ALLOW_SUPERUSER=1
+ENV COMPOSER_MEMORY_LIMIT=-1
 
+# RUN [ "apt-get", "install", "-qy", "--no-install-recommends", "apt-utils" ] # does not work
 RUN [ "apt-get", "-q", "update" ]
 RUN [ "apt-get", "-qy", "--allow-downgrades", "--allow-remove-essential", "--allow-change-held-packages", "upgrade" ]
 RUN [ "apt-get", "-qy", "--allow-downgrades", "--allow-remove-essential", "--allow-change-held-packages", "dist-upgrade" ]
@@ -14,7 +16,8 @@ RUN [ "apt-get", "install", "-qy", "--allow-downgrades", "--allow-remove-essenti
 	  "mysql-client", \
 	  "vim", \
       "wget", \
-	  "gnupg"]
+	  "gnupg", \
+	  "unzip"]
 
 RUN touch /etc/apt/sources.list.d/pgdg.list
 RUN echo 'deb http://apt.postgresql.org/pub/repos/apt/ stretch-pgdg main' > /etc/apt/sources.list.d/pgdg.list
