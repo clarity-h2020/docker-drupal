@@ -19,7 +19,7 @@ RUN [ "apt-get", "install", "-qy", "--allow-downgrades", "--allow-remove-essenti
 	  "gnupg", \
 	  "unzip", \
 	  "libxrender1", \
-	  "libfreetype", \
+	  "libfreetype6", \
 	  "libssl1.0-dev"]
 
 RUN touch /etc/apt/sources.list.d/pgdg.list
