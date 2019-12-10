@@ -20,7 +20,8 @@ RUN [ "apt-get", "install", "-qy", "--allow-downgrades", "--allow-remove-essenti
 	  "unzip", \
 	  "libxrender1", \
 	  "libfreetype6", \
-	  "libssl1.0-dev"]
+	  "libssl1.0-dev", \
+	  "libfontconfig"]
 
 RUN touch /etc/apt/sources.list.d/pgdg.list
 RUN echo 'deb http://apt.postgresql.org/pub/repos/apt/ stretch-pgdg main' > /etc/apt/sources.list.d/pgdg.list
