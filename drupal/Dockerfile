@@ -1,5 +1,5 @@
 # https://circleci.com/blog/continuous-drupal-p1-maintaining-with-docker-git-composer/
-FROM drupal:8.7.10-apache
+FROM drupal:8-apache
 
 
 ENV DEBIAN_FRONTEND=noninteractive LANG=en_US.UTF-8 LC_ALL=C.UTF-8 LANGUAGE=en_US.UTF-8
