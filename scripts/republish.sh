@@ -1,6 +1,6 @@
 #!/bin/bash
 echo load shape file from wms
-curl "http://services.clarity-h2020.eu:8080/geoserver/clarity/wfs?request=GetFeature&typeNames=clarity:city&outputFormat=SHAPE-ZIP" --output ./data.zip --silent
+curl "https://geoserver.myclimateservice.eu/geoserver/clarity/wfs?request=GetFeature&typeNames=clarity:city&outputFormat=SHAPE-ZIP" --output ./data.zip --silent
 echo unzip shape file
 unzip -q data 
 echo copy shape to postgis container
