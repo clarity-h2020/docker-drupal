@@ -20,7 +20,7 @@ RUN [ "apt-get", "install", "-qy", "--allow-downgrades", "--allow-remove-essenti
 	  "unzip", \
 	  "libxrender1", \
 	  "libfreetype6", \
-	  "libssl1.1-dev", \
+	  "libssl1.1", \
 	  "libfontconfig"]
 
 RUN touch /etc/apt/sources.list.d/pgdg.list
