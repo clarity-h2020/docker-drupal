@@ -13,14 +13,14 @@ RUN [ "apt-get", "-qy", "--allow-downgrades", "--allow-remove-essential", "--all
 RUN [ "apt-get", "install", "-qy", "--allow-downgrades", "--allow-remove-essential", "--allow-change-held-packages", \
       "curl", \
       "git", \
-	  "mysql-client", \
+	  "default-mysql-client", \
 	  "vim", \
       "wget", \
 	  "gnupg", \
 	  "unzip", \
 	  "libxrender1", \
 	  "libfreetype6", \
-	  "libssl1.0-dev", \
+	  "libssl1.1-dev", \
 	  "libfontconfig"]
 
 RUN touch /etc/apt/sources.list.d/pgdg.list
