@@ -49,7 +49,7 @@ services:
 
   drupal-db:
     container_name: ${COMPOSE_PROJECT_NAME}-postgis
-    image: mdillon/postgis:10
+    image: postgis/postgis:10-3.0
     environment:
         # THIS IS MADNESS: envs need to be ordered POSTGRES_DB > POSTGRES_USER > POSTGRES_PASSWORD.
         # https://github.com/docker-library/postgres/issues/41#issuecomment-382925263
