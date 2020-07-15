@@ -17,16 +17,16 @@ RUN [ "apt-get", "install", "-qy", "--allow-downgrades", "--allow-remove-essenti
 	  "vim", \
       "wget", \
 	  "gnupg", \
-	  "unzip", \
-	  "libxrender1", \
-	  "libfreetype6", \
-	  "libssl1.1", \
-	  "libfontconfig"]
+	  "unzip"]
 
 RUN touch /etc/apt/sources.list.d/pgdg.list
 RUN echo 'deb http://apt.postgresql.org/pub/repos/apt/ stretch-pgdg main' > /etc/apt/sources.list.d/pgdg.list
 RUN wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | apt-key add -
 RUN apt-get update
+
+ADD https://github.com/wkhtmltopdf/packaging/releases/download/0.12.6-1/wkhtmltox_0.12.6-1.buster_amd64.deb wkhtmltox_0.12.6-1.buster_amd64.deb
+RUN yes | apt install ./wkhtmltox_0.12.6-1.buster_amd64.deb
+RUN [ "rm", "wkhtmltox_0.12.6-1.buster_amd64.deb" ]
 
 RUN [ "apt-get", "install", "-qy", "--allow-downgrades", "--allow-remove-essential", "--allow-change-held-packages", \
 	  "postgresql-client-10" ]
