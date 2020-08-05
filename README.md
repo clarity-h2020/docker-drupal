@@ -30,7 +30,7 @@ docker-compose build
 ```
 
 ### Configuring and starting the containers
-Containers are managed via the customised [docker-compose.yml](https://github.com/clarity-h2020/docker-drupal/blob/dev/docker-compose.yml). The actual configuration is maintained in an `.env` while [.env.sample](https://github.com/clarity-h2020/docker-drupal/blob/dev/.env.sample) can be used as blueprint of this configuration file. Variables in this file will be substituted into docker-compose.yml.
+Containers are managed via the customised [docker-compose.yml](https://github.com/clarity-h2020/docker-drupal/blob/dev/docker-compose.yml). The actual configuration is maintained in an `.env` file while [.env.sample](https://github.com/clarity-h2020/docker-drupal/blob/dev/.env.sample) can be used as blueprint of this configuration file. Variables in this file will be substituted into docker-compose.yml.
 
 The configuration on the development and production system is identical, except for the environment variables `VIRTUAL_HOST` and `LETSENCRYPT_HOST` required by [nginx-proxy](https://github.com/clarity-h2020/docker-compose-letsencrypt-nginx-proxy-companion/tree/csis-dev.ait.ac.at). Example for  development system:
 
@@ -148,7 +148,7 @@ git push
 ## Password for 'https://username@scm.atosresearch.eu':
 ```
 
-In general, Drupal Core and Modules with can be updated with help of [drush](https://www.drush.org/) and [composer](https://getcomposer.org/):
+In general, Drupal Core and Modules can be updated with help of [drush](https://www.drush.org/) and [composer](https://getcomposer.org/):
 
 ```sh
 composer update
