@@ -1,12 +1,12 @@
 # docker-drupal
 
-[Drupal 8](https://www.drupal.org/) Project for implementing the [CLARITY](https://clarity-h2020.eu/) Climate Services Information System [CSIS](https://csis.myclimateservice.eu/).
+[Drupal 8](https://www.drupal.org/) Project for implementing the [CLARITY](https://clarity-h2020.eu/) Climate Services Information System ([CSIS](https://github.com/clarity-h2020/csis/)).
 
 ## Description 
 
 This repository contains the general configuration for CSIS docker containers deployed at [CSIS Development System](https://github.com/clarity-h2020/csis#csis-development-system) and [CSIS Production System](https://github.com/clarity-h2020/csis#csis-production-system) virtual servers. 
 
-The actual drupal site configuration which is mapped to the *bind-mount* volume `drupal-data` is stored in the separate **private** [clarity-csis-drupal](https://scm.atosresearch.eu/ari/clarity-csis-drupal) repository. This repository is mainly  used for synchronising configuration and content between the [development](https://csis-dev.myclimateservice.eu/) and [production](https://csis.myclimateservice.eu/) system.
+The actual drupal site configuration which is mapped to the *bind-mount* volume `drupal-data` is stored in the separate **private** [clarity-csis-drupal](https://scm.atosresearch.eu/ari/clarity-csis-drupal) repository. This repository is mainly used for [synchronising](#synchronisation-between-dev-and-prod) configuration and content between the [development](https://csis-dev.myclimateservice.eu/) and [production](https://csis.myclimateservice.eu/) system.
 
 ## Implementation 
 
@@ -122,6 +122,8 @@ Recreate containers:
 ```sh
 docker-compose up -d --force-recreate --remove-orphans
 ```
+
+Furthermore any changes to the docker and compose files have to be committed and a new [release](https://github.com/clarity-h2020/docker-drupal/releases) has to be made.
 
 ### Drupal Core and Modules
 
